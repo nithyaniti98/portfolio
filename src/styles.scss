@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+// 2. Set your own initial variables
+//$pink: #ffb3b3;
+//$pink-invert: #fff;
+// Add a serif family
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap');
+$title-family: 'Playfair Display', serif;
+$subtitle-family: 'Open Sans', sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+//$primary: $pink;
+//$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+//$danger: $orange;
+// Use the new serif family
+//$family-primary: $family-serif;
+
+// 4. Setup your Custom Colors
+$seapink: #EA8A8A;
+$seapink-invert: findColorInvert($seapink);
+$bizarre: #ebd5d5;
+$bizarre-invert: findColorInvert($bizarre);
+$concrete: #f2f2f2;
+$concrete-invert: findColorInvert($concrete);
+$dorado: #685454;
+$dorado-invert: findColorInvert($dorado);
+
+// 5. Add new color variables to the color map.
+@import "node_modules/bulma/sass/utilities/derived-variables";
+$addColors: (
+        "seapink": ($seapink, $seapink-invert),
+        "bizarre": ($bizarre, $bizarre-invert),
+        "concrete": ($concrete, $concrete-invert),
+        "dorado": ($dorado, $dorado-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import "node_modules/bulma"; /* You can add global styles to this file, and also import other style files */
+@import "node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline";

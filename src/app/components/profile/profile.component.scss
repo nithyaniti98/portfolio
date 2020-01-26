@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Meddon&display=swap');
+section {
+  padding-top: 20px;
+}
+h1.super-heading {
+  letter-spacing: 1rem;
+  margin: 5px 0;
+  border-top:2px solid rgba(black, .1);
+  border-bottom:2px solid rgba(black, .1);
+  display:block;
+  padding:15px 0;
+  font-weight: 800;
+  color:#ccc;
+  span {color:black;}
+}
+
+h2.subtitle {
+  padding-top: 7px;
+}
+h2.signature {
+  padding: 0px;
+  font-weight: 800;
+  font-family: Meddon, cursive;
+}
+
+div.container {
+  padding-bottom: 25px;
+}
