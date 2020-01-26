@@ -1,6 +1,9 @@
 # MyPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+This personal portfolio was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0. 
+
+## Future Works
+Currently, the website is only optiimised for desktops. I will be working on optimising the portfolio for other (smaller) screens. Additionally, I do plan to redesign the timeline layout.
 
 ## Development server
 
